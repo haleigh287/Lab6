@@ -1,0 +1,8 @@
+﻿Bugs:
+
+- Node."h"pp
+- main.cpp -- didnt include Node.h
+- does not add to Queue correctly -- or, fails to peek
+- adds to front, not back
+-deconstructor does not delete all Queues so memory leaks
+
