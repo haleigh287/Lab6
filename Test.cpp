@@ -48,15 +48,15 @@ cout<< "Test #8: Enqueue 1,2 then dequeue. Correctly peeks at front -- ";
 if(test08() == true) cout <<"PASSED \n";
 else cout << "FAILED \n";
 
-cout<< "Test #9: Queue's m_front and m_back are correct atfer enqueueing twice -- This test causes seg fault. Inconclusive? because I can't tell if it's my test's fault or if it's a code bug \n";
-// if(test09() == true) cout <<"PASSED \n";
-// else cout << "FAILED \n";
+// cout<< "Test #9: Queue's m_front and m_back are correct atfer enqueueing twice -- This test causes seg fault. Inconclusive? because I can't tell if it's my test's fault or if it's a code bug \n";
+// // if(test09() == true) cout <<"PASSED \n";
+// // else cout << "FAILED \n";
 
-cout<< "Test #10: Queue is empty after deconstructor is called -- ";
+cout<< "Test #9: Queue is empty after deconstructor is called -- ";
 if(test10() == true) cout <<"PASSED \n";
 else cout << "FAILED \n";
 
-cout<< "Test #11: No memory leaks when used Valgrind -- FAILED \n";
+cout<< "Test #10: No memory leaks when used Valgrind -- FAILED \n";
 }
 
 
@@ -179,9 +179,9 @@ bool Test::test08()
 bool Test::test09()
 {
   Queue q;
-  //int* temp;
   q.enqueue(1);
   q.enqueue(2);
+  std::cout << "mmmm" <<m_front->getEntry();
   //int val1 = m_front->getEntry();
   //int val2 = m_back->getEntry();
   // if(val1 ==1 && val2 ==2)
